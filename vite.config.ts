@@ -9,7 +9,7 @@ export default defineConfig({
 	plugins: [tailwindcss(), svgr(), react(), tsconfigPaths()],
 	build: {
 		chunkSizeWarningLimit: 700,
-		outDir: '../tct-outdoor-map-build',
+		outDir: './dist',
 		emptyOutDir: true,
 	},
 	define: {
