@@ -1,0 +1,75 @@
+@layer base {
+	@font-face {
+		font-family: 'Pretendard';
+		font-weight: 100 900; /* 모든 가중치 지원 */
+		font-display: swap; /* 즉시 대체 폰트를 사용하고, 웹폰트가 로드되면 교체 */
+
+		src:
+			local('Pretendard Variable'),
+			local('Pretendard'),
+			url('./fonts/PretendardVariable.woff2') format('woff2');
+	}
+
+	:root {
+		--toolbox-left: 10%;
+	}
+
+	body {
+		@apply m-0 p-0 min-h-screen;
+		@apply font-body1;
+
+		background-color: #fff;
+		font-family: 'Pretendard', sans-serif;
+		position: relative;
+		/* min-width: 1280px;
+		min-height: 720px;
+		overflow: auto; */
+	}
+
+	input {
+		all: unset;
+		box-sizing: border-box;
+	}
+
+	input[type='range'],
+	input[type='checkbox'],
+	input[type='radio'] {
+		all: revert;
+	}
+
+	input[type='date']::-webkit-calendar-picker-indicator {
+		color: transparent;
+	}
+
+	button {
+		transition: border-color 0.25s;
+		outline: none;
+		cursor: pointer;
+	}
+
+	button:disabled {
+		pointer-events: none;
+	}
+
+	button:active,
+	button:focus,
+	button:focus-visible {
+		outline: none;
+	}
+
+	select {
+		appearance: none; /* 크롬, 엣지 */
+		-webkit-appearance: none; /* 사파리 */
+		-moz-appearance: none; /* 파이어폭스 */
+
+		background-image: url('./images/arrow-down.svg');
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+		padding: 8px 42px 8px 10px;
+		border: 1px solid var(--color-twinny-gray-400);
+		height: 40px;
+		background-color: #fff;
+		border-radius: 6px;
+		color: #000;
+	}
+}

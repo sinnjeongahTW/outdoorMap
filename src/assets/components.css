@@ -1,0 +1,71 @@
+@layer components {
+	.twinny-input-box {
+		@apply input-box-base;
+		border: 1px solid var(--color-twinny-gray-400);
+		&:focus {
+			border-color: #000;
+		}
+	}
+
+	.twinny-input-error-box {
+		@apply input-box-base;
+		border: 1px solid var(--color-twinny-red-500);
+		&:focus {
+			border-style: dashed;
+			outline: 3px solid var(--color-twinny-red-500);
+		}
+	}
+
+	.twinny-input-radio {
+		display: flex;
+		gap: 4px;
+		align-items: center;
+		input {
+			margin-top: -2px;
+		}
+	}
+
+	.twinny-toast-success {
+		@apply toast-box;
+		background-color: var(--color-twinny-green-500);
+		border-color: var(--color-twinny-green-500);
+	}
+
+	.twinny-toast-error {
+		@apply toast-box;
+		background-color: var(--color-twinny-red-500);
+		border-color: var(--color-twinny-red-500);
+	}
+
+	.twinny-toast-info {
+		@apply toast-box;
+		background-color: var(--color-twinny-yellow-500);
+		border-color: var(--color-twinny-yellow-500);
+	}
+
+	.twinny-btn-white {
+		@apply btn-base;
+
+		&:hover {
+			background-color: var(--color-twinny-gray-100);
+		}
+	}
+	.twinny-btn-black {
+		@apply btn-base;
+		background-color: #000;
+		color: #fff;
+		border: none;
+
+		&:hover {
+			background-color: var(--color-twinny-gray-800);
+		}
+	}
+
+	.twinny-btn-disabled {
+		@apply btn-base;
+		color: var(--color-twinny-gray-400);
+		background-color: var(--color-twinny-gray-200);
+		border: none;
+		cursor: not-allowed;
+	}
+}

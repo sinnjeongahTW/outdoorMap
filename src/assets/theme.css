@@ -1,0 +1,15 @@
+@theme {
+	--color-twinny-gray-100: #F5F5F5;
+	--color-twinny-gray-200: #E9E9E9;
+	--color-twinny-gray-300: #D9D9D9;
+	--color-twinny-gray-400: #C4C4C4;
+	--color-twinny-gray-500: #9D9D9D;
+	--color-twinny-gray-600: #7B7B7B;
+	--color-twinny-gray-700: #555555;
+	--color-twinny-gray-800: #484848;
+	--color-twinny-gray-900: #262626;
+
+	--color-twinny-red-500: #f51717;
+	--color-twinny-green-500: #14a95b;
+	--color-twinny-yellow-500: #fac91d;
+}

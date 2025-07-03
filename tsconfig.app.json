@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "ES2021", "ES2015", "DOM", "DOM.Iterable"],
+		"skipLibCheck": false, // 속도보다 타입 안정성 우선
+		"esModuleInterop": true, // CommonJS와 ESModule 호환성 향상
+		"allowJs": false, // JavaScript 파일을 타입스크립트로 관리하려면 false
+		"forceConsistentCasingInFileNames": true,
+		"allowImportingTsExtensions": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true, // 빌드를 직접 처리하려면 false로 변경
+		"jsx": "react-jsx",
+		"baseUrl": ".",
+		"paths": {
+			"@api/*": ["./src/api/*"],
+			"@assets/*": ["./src/assets/*"],
+			"@constants/*": ["./src/constants/*"],
+			"@components/*": ["./src/components/*"],
+			"@globals/*": ["./src/globals/*"],
+			"@hooks/*": ["./src/hooks/*"],
+			"@routes/*": ["./src/routes/*"],
+			"@utils/*": ["./src/utils/*"]
+		},
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["src"]
+}

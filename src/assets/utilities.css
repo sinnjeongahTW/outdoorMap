@@ -1,0 +1,87 @@
+@utility admin-min-size {
+	min-width: 1440px;
+	min-height: 1024px;
+	overflow: auto;
+}
+
+@utility font-h1 {
+	font-size: 32px;
+	line-height: 42px;
+}
+@utility font-h2 {
+	font-size: 24px;
+	line-height: 34px;
+}
+@utility font-h3 {
+	font-size: 20px;
+	line-height: 30px;
+}
+@utility font-body1 {
+	font-size: 16px;
+	line-height: 24px;
+}
+@utility font-body2 {
+	font-size: 14px;
+	line-height: 20px;
+}
+@utility font-body3 {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+@utility border-round-end {
+	border-end-end-radius: 4px;
+	border-end-start-radius: 4px;
+	border-start-end-radius: 4px;
+	border-start-start-radius: 4px;
+}
+
+@utility input-box-base {
+	height: 40px;
+	background-color: #fff;
+	margin: 0;
+	outline: 0;
+	padding: 8px 14px 8px 0;
+
+	border-radius: 6px;
+	color: #000;
+}
+
+@utility input-base {
+	height: 38px;
+	background-color: #fff;
+	margin: 0;
+	outline: 0;
+	padding: 8px 14px;
+
+	border-radius: 6px;
+	color: #000;
+	&::placeholder {
+		color: var(--color-twinny-gray-400);
+	}
+}
+
+@utility btn-base {
+	height: 40px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding: 8px 14px;
+	border: 1px solid #000;
+	color: #000;
+}
+
+@utility toast-box {
+	border: 1px solid var(--color-twinny-gray-400);
+	border-radius: 6px;
+	color: var(--color-tct-primary-50);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow-wrap: break-word;
+	padding: 12px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@utility shadow-box {
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
