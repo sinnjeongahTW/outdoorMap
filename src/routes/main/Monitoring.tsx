@@ -3,6 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import { LatLngTuple } from 'leaflet';
 import nodeIcon from '@assets/images/icon-node.svg';
 import robotIcon from '@assets/images/icon-robot.svg';
+import pinIcon from '@assets/images/pin.svg';
 import L from 'leaflet';
 import { useEffect, useRef, useState } from 'react';
 import * as turf from '@turf/turf';
@@ -25,6 +26,12 @@ const customRobotIcon = new L.Icon({
 	iconSize: [12, 12], // 아이콘 크기
 	iconAnchor: [6, 6], // 좌표 기준점 (아래쪽 가운데)
 	popupAnchor: [0, -12], // 팝업 위치
+});
+const customPinIcon = new L.Icon({
+	iconUrl: pinIcon,
+	iconSize: [24, 24], // 아이콘 크기
+	iconAnchor: [12, 30], // 좌표 기준점 (아래쪽 가운데)
+	popupAnchor: [0, -24], // 팝업 위치
 });
 
 export default function Monitoring() {
@@ -90,7 +97,7 @@ export default function Monitoring() {
 					attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 					url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 				/>
-				<Marker position={[36.392378, 127.361459]}>
+				<Marker position={[36.392378, 127.361459]} icon={customPinIcon}>
 					<Popup>트위니 본사입니다.</Popup>
 				</Marker>
 
